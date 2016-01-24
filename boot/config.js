@@ -6,7 +6,6 @@ var autoprefixer = require('autoprefixer-core');
 
 var parentDir = path.join(__dirname, '..');
 var appDir = path.join(parentDir, 'app');
-var angularDir = path.join(parentDir, 'public');
 
 var pkg = require(path.join(parentDir, 'package'));
 
@@ -50,8 +49,8 @@ exports = module.exports = function() {
       distDir: distDir,
       publicDir: publicDir,
       views: {
-        dir: angularDir,
-        engine: 'angular'
+        dir: viewsDir,
+        engine: 'jade'
       },
       password: {
         minStrength: 0,
@@ -86,8 +85,8 @@ exports = module.exports = function() {
         messageFormat: 'text'
       },
       session: {
-        secret: 'NWoeDxt(0I6brDD3XlEOgh#a5AY3U18$YS[uRqkt0W52)TIni3r5j@CPu)xipo])RTYI8]vR)Kgc&Po(r&BzEGrpSAoH@38BV4NK0](egEAvmh]ZU%s[@jRsfEsb@31)9B',
-        key: 'green-book',
+        secret: 'dlO9HFr1(ezl*$9brwcbO9]C^Uj%j#[9OmJ0YcNT&tUtW03UCZGT1KtIN8eMGu1)t5N5XrzG75PmR@W2Mq6Q#Ho!%%mDzPQ@XcPBKJqSa*iZ^4iJ1pI(A!$EKMC1r*8fCq',
+        key: 'green-book-api',
         cookie: {
           maxAge: maxAge
         },
@@ -112,7 +111,7 @@ exports = module.exports = function() {
           options: {}
         }
       },
-      cookieParser: 'jbhESqVPDUXhW6ln!yB@siyi3f]yQWPr0rHNy5[XRi%@JbSdifMzZn$sWH)%vEfJIr1op6G$k[2GCxT#g#4AE]pIgPc8nxIYbqgMZ92d45l5*J4nN1[MyEqU84d$@VhLsX',
+      cookieParser: '$wXMRen4BV9$^sWCw6LQMH5isuG!k2u&%2PNN!D*ZZ@#r[ygr)6y#MSAOSDwZMchtnSNnFw@1Pdme$3PhF&v)BIV2h8#d&XM9Rc4RU!EfTGafeapB0]rwe%DNJnl&cLoP#',
       csrf: {
         enabled: true,
         options: {
@@ -181,11 +180,11 @@ exports = module.exports = function() {
         port: 5000
       },
       mongo: {
-        dbname: 'green-book_test',
-        db: 'green-book_test' // keep for winston logger
+        dbname: 'green-book-api_test',
+        db: 'green-book-api_test' // keep for winston logger
       },
       redis: {
-        prefix: 'green-book_test',
+        prefix: 'green-book-api_test',
       },
       logger: {
         'console': false,
@@ -195,14 +194,14 @@ exports = module.exports = function() {
 
     development: {
       cache: true,
-      url: 'http://green-book-dev.herokuapp.com',
+      url: 'http://green-book-api-dev.eskimo.io',
       server: {
         env: 'development',
         port: 3000,
       },
       mongo: {
-        dbname: 'green-book_development',
-        db: 'green-book_development' // keep for winston logger
+        dbname: 'green-book-api_development',
+        db: 'green-book-api_development' // keep for winston logger
       },
       knex: {
         debug: true,
@@ -210,17 +209,17 @@ exports = module.exports = function() {
           host: '127.0.0.1',
           user: 'root',
           password: '',
-          database: 'green-book_development'
+          database: 'green-book-api_development'
         }
       },
       redis: {
-        prefix: 'green-book_development'
+        prefix: 'green-book-api_development'
       }
     },
 
     staging: {
       cache: true,
-      url: 'http://green-book-staging.herokuapp.com',
+      url: 'http://green-book-api-stag.eskimo.io',
       password: {
         minStrength: 1,
         limitAttempts: true
@@ -239,19 +238,19 @@ exports = module.exports = function() {
         cluster: true
       },
       mongo: {
-        dbname: 'green-book_staging',
-        db: 'green-book_staging' // keep for winston logger
+        dbname: 'green-book-api_staging',
+        db: 'green-book-api_staging' // keep for winston logger
       },
       knex: {
         connection: {
           host: '127.0.0.1',
           user: 'root',
           password: '',
-          database: 'green-book_staging'
+          database: 'green-book-api_staging'
         }
       },
       redis: {
-        prefix: 'green-book_staging'
+        prefix: 'green-book-api_staging'
       },
       output: {
         colorize: false
@@ -275,7 +274,7 @@ exports = module.exports = function() {
 
     production: {
       cache: true,
-      url: 'http://green-book.herokuapp.com',
+      url: 'http://green-book-api-prod.eskimo.io',
       password: {
         minStrength: 1,
         limitAttempts: true
@@ -294,19 +293,19 @@ exports = module.exports = function() {
         cluster: true
       },
       mongo: {
-        dbname: 'green-book_production',
-        db: 'green-book_production' // keep for winston logger
+        dbname: 'green-book-api_production',
+        db: 'green-book-api_production' // keep for winston logger
       },
       knex: {
         connection: {
           host: '127.0.0.1',
           user: 'root',
           password: '',
-          database: 'green-book_production'
+          database: 'green-book-api_production'
         }
       },
       redis: {
-        prefix: 'green-book_production'
+        prefix: 'green-book-api_production'
       },
       output: {
         colorize: false

@@ -11,7 +11,7 @@ Using information from the [Public Safety Data Portal](https://publicsafetydatap
 git clone git@github.com:yourname/green-book-api.git
 
 # change dir to the cloned repo
-cd green-book
+cd green-book-api
 
 # install dev dependencies
 npm install -d

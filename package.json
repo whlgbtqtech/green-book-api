@@ -1,5 +1,6 @@
+
 {
-  "name": "green-book",
+  "name": "green-book-api",
   "version": "1.0.0",
   "main": "./app.js",
   "engines": {
@@ -36,6 +37,7 @@
     "express": "^4.12.4",
     "express-jade": "0.0.3",
     "express-paginate": "^0.0.8",
+    "express-session": "^1.11.2",
     "helmet": "^0.9.0",
     "igloo": "^0.0.7",
     "jade": "^1.9.2",
@@ -79,7 +81,7 @@
     "gulp-exit": "0.0.2",
     "gulp-filter": "^2.0.2",
     "gulp-imagemin": "^2.2.1",
-    "gulp-jade-usemin": "^1.1.0",
+    "gulp-jade-usemin": "^1.0.5",
     "gulp-jshint": "^1.10.0",
     "gulp-less": "^3.0.3",
     "gulp-minify-html": "^1.0.2",
@@ -94,7 +96,7 @@
     "istanbul": "^0.3.14",
     "jshint-stylish": "^1.0.2",
     "mocha": "^2.2.5",
-    "run-sequence": "0.3.7",
+    "run-sequence": "^1.1.0",
     "sinon": "^1.14.1",
     "sinon-chai": "^2.7.0",
     "supertest": "^1.0.1",
@@ -115,10 +117,6 @@
     {
       "name": "cjwilburn",
       "email": "courtney@cjwilburn.com"
-    },
-    {
-      "name": "barbbella",
-      "email": "barbedbella@gmail.com"
     }
   ],
   "dist": {
