@@ -10,7 +10,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.box = "ubuntu/trusty64"
   config.vm.box_url = 'https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box'
-  config.vm.host_name = 'trusty64-eskimo.dev'
+  config.vm.host_name = 'green-book-api.app'
+  config.vm.network "private_network", ip: "192.168.17.17"
+  config.vm.synced_folder ENV[ 'HOME' ] + "/green-book-api", "/green-book-api", type: "nfs", create: true
+
 
   config.vm.provider :virtualbox do |vb|
     host = RbConfig::CONFIG['host_os']

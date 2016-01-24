@@ -49,7 +49,7 @@ exports = module.exports = function(mongoose, iglooMongoosePlugin) {
       ComplainantRace: {
           type: String
       },
-      HowClosed:{
+      HowClosed: {
           type: String
       }
   });

@@ -1,10 +1,9 @@
 {
-  "homepage": "https://github.com/whlgbtqtech/green-book",
+  "homepage": "https://github.com/whlgbtqtech/green-book-api",
   "authors": [
-      "Kate Jefferson <barbedbella@gmail.com>",
       "Courtney Wilburn <courtney@cjwilburn.com>"
     ],
-  "name": "green-book",
+  "name": "green-book-api",
   "version": "1.0.0",
   "private": true,
   "ignore": [
@@ -15,13 +14,11 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.2.0",
-    "font-awesome": "~4.1.0",
-    "jquery": "~2.1.1",
-    "modernizr": "~2.8.3",
-    "bootbox": "~4.3.0",
-    "jade": "~1.8.0",
-    "angular": "~1.4.7",
-    "angular-ui-router": "~0.2.15"
+      "bootstrap": "~3.2.0",
+      "font-awesome": "~4.1.0",
+      "jquery": "~2.1.1",
+      "modernizr": "~2.8.3",
+      "bootbox": "~4.3.0",
+      "jade": "~1.8.0"
   }
 }

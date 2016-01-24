@@ -1,5 +1,5 @@
 
-# Green-Book
+# Green-Book-API
 
 Using information from the [Public Safety Data Portal](https://publicsafetydataportal.org) to visualize law enforcement-community interactions and allow community members to have a voice.
 
@@ -8,7 +8,7 @@ Using information from the [Public Safety Data Portal](https://publicsafetydatap
 
 ```bash
 # clone the repo
-git clone git@github.com:yourname/green-book.git
+git clone git@github.com:yourname/green-book-api.git
 
 # change dir to the cloned repo
 cd green-book
@@ -31,7 +31,7 @@ Configuration (e.g. database and logging setting per environment) is stored in `
 
 ## Documentation
 
-[The wiki](https://github.com/whlgbtqtech/green-book) is the main source for additional documentation.
+[The wiki](https://github.com/whlgbtqtech/green-book-api) is the main source for additional documentation.
 
 ## Usage
 
