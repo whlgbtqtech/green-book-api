@@ -10,45 +10,45 @@ exports = module.exports = function(mongoose, iglooMongoosePlugin) {
     evidence_id: {
       type: String,
       required: true
-  },
-  id_exteral: {
+    },
+    id_exteral: {
       type: String,
       reuired: false
-  },
-  created_date_record_start: {
+    },
+    created_date_record_start: {
       type: Date,
       required: false
-  },
-  date_record_end: {
+    },
+    date_record_end: {
       type: Date,
       required: false
-  },
-  flag: {
+    },
+    flag: {
       type: Boolean,
       required: false
-  },
-  content_type: {
+    },
+    contentType: {
       type: String
-  },
-  size_mb: {
+    },
+    size_mb: {
       type: Number
-  },
-  duration_seconds: {
+    },
+    duration_seconds: {
       type: Number
-  },
-  owner_first_name: {
+    },
+    owner_first_name: {
       type: String
-  },
-  owner_last_name: {
+    },
+    owner_last_name: {
       type: String
-  },
-  owner_badge_id: {
+    },
+    owner_badge_id: {
       type: Number
-  },
-  categories: {
+    },
+    categories: {
       type: String
-  },
-  evidence_tags: {
+    },
+    evidence_tags: {
       type: String
   }
   });

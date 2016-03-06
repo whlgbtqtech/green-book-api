@@ -10,61 +10,61 @@ exports = module.exports = function(mongoose, iglooMongoosePlugin) {
       CRNumber: {
           type: String
       },
-      DispatchDateTime: {
+      dispatchDateTime: {
           type: String
       },
-      Class: {
+      class: {
           type: String
       },
-      ClassDescription: {
+      classDescription: {
           type: String
       },
-      PoliceDistrictNumber: {
+      policeDistrictNumber: {
           type: Number
       },
-      PoliceDistrictName: {
+      policeDistrictName: {
           type: String
       },
-      BlockAddress: {
+      blockAddress: {
           type: String
       },
-      City: {
+      city: {
           type: String
       },
-      State: {
+      state: {
           type: String
       },
-      ZipCode: {
+      zipCode: {
           type: String
       },
-      Agency: {
+      agency: {
           type: String
       },
-      Place: {
+      place: {
           type: String
       },
-      Sector: {
+      sector: {
           type: String
       },
-      Beat: {
+      beat: {
           type: String
       },
       PRA: {
           type: String
       },
-      StartDateTime: {
+      startDateTime: {
           type: Date
       },
-      EndDateTime: {
+      endDateTime: {
           type: Date
       },
-      Latitude: {
+      latitude: {
           type: String
       },
-      Longitude: {
+      longitude: {
         type: String
       },
-      Location: {
+      location: {
         type: String
       }
   });

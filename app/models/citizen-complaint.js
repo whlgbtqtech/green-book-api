@@ -25,31 +25,31 @@ exports = module.exports = function(mongoose, iglooMongoosePlugin) {
       Neighborhood: {
           type: String
       },
-      allegation-code: {
+      allegationCode: {
           type: String
       },
       description: {
           type: String
       },
-      disposition-code: {
+      dispositionCode: {
           type: String
       },
-      respondent-id: {
+      respondentId: {
           type: String
       },
-      OfficerSex: {
+      officerSex: {
           type: String
       },
-      OfficerRace: {
+      officerRace: {
           type: String
       },
-      ComplainantSex: {
+      complainantSex: {
           type: String
       },
-      ComplainantRace: {
+      complainantRace: {
           type: String
       },
-      HowClosed: {
+      howClosed: {
           type: String
       }
   });
