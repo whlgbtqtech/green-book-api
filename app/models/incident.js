@@ -8,30 +8,30 @@ exports = module.exports = function(mongoose, iglooMongoosePlugin) {
 
   var Incident = new mongoose.Schema({
     ucr: {
-      type: String,
-  },
-  crime: {
      type: String
-  },
-  date: {
+    },
+    crime: {
+     type: String
+   },
+   date: {
+    type: Date
+   },
+   time: {
       type: Date
   },
-  time: {
-      type: Date
-  },
-  case: {
+   case: {
      type: String
   },
-  address:{
+   address:{
       type: String
   },
-  beat: {
+   beat: {
       type: String
   },
-  x_coord: {
+   x_coord: {
       type: Number
   },
-  y_coord: {
+   y_coord: {
       type: Number
   }
   });

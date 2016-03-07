@@ -10,7 +10,61 @@ exports = module.exports = function(mongoose, iglooMongoosePlugin) {
     name: {
       type: String,
       required: true
-    }
+  },
+    id: {
+      type: Number
+   },
+    typeOfStop: {
+      type: String
+   },
+    citationControlNumber: {
+      type: Number
+   },
+    activityResults: {
+      type: String
+   },
+    officerGender: {
+      type: String
+   },
+    officerRace: {
+      type: String
+   },
+    officerAgeRange: {
+      type: String
+   },
+    activityDate: {
+      type: Date
+   },
+    activityTime: {
+      type: Date
+   },
+    activityLocation: {
+      type: String
+   },
+    activityDivision: {
+      type: String
+   },
+    activityBeat: {
+      type: String
+   },
+    driverGender: {
+      type: String
+   },
+    driverRace: {
+      type: String
+   },
+    driverAgeRange: {
+      type: String
+   },
+    numberOfPassengers: {
+       type: String
+   },
+    wasVehicleSearched: {
+      type: Boolean
+   },
+    reasonForSearch: {
+       type: String
+   }
   });
 
   // virtuals
